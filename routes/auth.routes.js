@@ -65,7 +65,7 @@ router.post(
 
       const { email, password } = req.body
 
-      const user = await User.fineOne({ email })
+      const user = await User.findOne({ email })
 
       if (!user) {
         return res.status(400).json({ message: 'Пользователь не найден' })
@@ -85,7 +85,9 @@ router.post(
 
       res.json({ token, userId: user.id })
     } catch (error) {
-      res.status(500).json({ message: 'Что-то пошло не так, попробуйте снова' })
+      res
+        .status(500)
+        .json({ message: `Что-то пошло не так, попробуйте снова ${error}` })
     }
   }
 )
