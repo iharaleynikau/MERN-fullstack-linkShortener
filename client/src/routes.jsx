@@ -6,7 +6,6 @@ import { DetailPage } from './pages/DetailPage/DetailPage'
 import { AuthPage } from './pages/AuthPage/AuthPage'
 
 export const useRoutes = (isAuthenticated) => {
-  console.log(isAuthenticated)
   if (isAuthenticated) {
     return (
       <Routes>

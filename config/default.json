@@ -1,5 +1,6 @@
 {
   "port": 5000,
   "jwtSecret": "camelcamel47",
-  "mongoUri": "mongodb+srv://ihar:135798462@cluster0.6i0kvqj.mongodb.net/?retryWrites=true&w=majority"
+  "mongoUri": "mongodb+srv://ihar:135798462@cluster0.6i0kvqj.mongodb.net/?retryWrites=true&w=majority",
+  "baseUrl": "http://localhost:5000"
 }

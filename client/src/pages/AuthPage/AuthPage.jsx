@@ -50,13 +50,18 @@ export const AuthPage = () => {
         <div>
           <label>
             Введите почту:
-            <Input name="email" onChange={handleChange} />
+            <Input name="email" value={form.email} onChange={handleChange} />
           </label>
         </div>
         <div>
           <label>
             Введите пароль:
-            <Input name="password" type="password" onChange={handleChange} />
+            <Input
+              name="password"
+              type="password"
+              value={form.password}
+              onChange={handleChange}
+            />
           </label>
         </div>
         <div className="auth-form__buttons-container">

@@ -4,6 +4,7 @@
   height: 50px;
   display: flex;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .menu__nav {
