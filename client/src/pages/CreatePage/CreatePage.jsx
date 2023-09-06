@@ -33,9 +33,7 @@ export const CreatePage = () => {
 
   return (
     <div className="create-container">
-      <span style={{ marginBottom: '10px', display: 'block' }}>
-        Введите ссылку:
-      </span>
+      <span style={{ marginBottom: '10px' }}>Введите ссылку:</span>
       <Input
         onChange={handleChange}
         value={link}

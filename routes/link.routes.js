@@ -48,6 +48,7 @@ router.get('/', auth, async (req, res) => {
 router.get('/:id', async (req, res) => {
   try {
     const link = await Link.findById(req.params.id)
+    console.log(link)
     res.json(link)
   } catch (error) {
     res.status(500).json({ message: `Что-то пошло не так, попробуйте снова` })

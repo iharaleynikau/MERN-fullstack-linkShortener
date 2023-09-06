@@ -22,3 +22,7 @@
   font-size: 20px;
   list-style-type: none;
 }
+
+.menu__ul > li > a {
+  color: var(--main-color);
+}
